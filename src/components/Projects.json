@@ -1,0 +1,16 @@
+[
+  {
+    "project_title": "Mk Ecommerce",
+    "project_description": "Built for speed, scalability, and style, MK Ecommerce brings your vision to life with a powerful technology stack designed for the modern shopper.",
+    "project_stack": [
+      "Next.js",
+      "Tailwind CSS",
+      "shopify",
+      "shadcn",
+      "graphql"
+    ],
+    "project_url_github": "https://github.com/maikCyphlock/ecommerce-mik",
+    "project_url_demo": "https://mikstore.vercel.app",
+    "project_img": "/projects/project-1.png"
+  }
+]

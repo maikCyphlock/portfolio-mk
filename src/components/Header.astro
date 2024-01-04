@@ -1,0 +1,48 @@
+---
+import data from "./Header.json";
+import Button from "./Button.astro";
+import Linkedin from "./svgl-icons/Linkedin.astro";
+import Github from "./svgl-icons/Github.astro";
+import Email from "./svgl-icons/Email.astro";
+import { Img } from "astro-imagetools/components";
+---
+
+<main class="mt-32 mb-20 flex flex-col gap-3">
+  <picture>
+    <div class="rounded-full aspect-square w-20 overflow-hidden">
+      <Img
+        src={data.profile_url}
+        title={data.profile_name}
+        width="250px"
+        height="250px"
+        attributes={{
+          link: {
+            fetchpriority: "high",
+          },
+        }}
+        alt={data.profile_alt}
+      />
+    </div>
+    <span class="sr-only">Mi perfil en GitHub</span>
+  </picture>
+  <h1 class="text-5xl font-bold tracking-tight">
+    {data.title}
+  </h1>
+  <h2 class="text-lg text-zinc-400 text-balance">{data.description}</h2>
+  <div class="flex gap-4 dark:text-zinc-400">
+    <Button>
+      <div slot="icon"><Linkedin className="w-6 h-6" /></div>
+      <a href="https://www.linkedin.com/in/maikol-aguilar/" target="_blank"
+        >Contacto</a
+      >
+    </Button>
+    <Button>
+      <div slot="icon"><Github className="w-6 h-6" /></div>
+      <a href="https://github.com/maikCyphlock" target="_blank">GitHub</a>
+    </Button>
+    <Button>
+      <div slot="icon"><Email className="w-6 h-6 " /></div>
+      <a href="mailto:maikoljob30@gmail.com" target="_blank">Correo</a>
+    </Button>
+  </div>
+</main>
