@@ -4,22 +4,15 @@ import Button from "./Button.astro";
 import Linkedin from "./svgl-icons/Linkedin.astro";
 import Github from "./svgl-icons/Github.astro";
 import Email from "./svgl-icons/Email.astro";
-// @ts-expect-error
-import { Img } from "astro-imagetools/components";
 ---
 
 <main class="mt-32 mb-20 flex flex-col gap-3">
   <picture>
     <div class="rounded-full aspect-square w-20 overflow-hidden">
-      <Img
+      <img
         src={data.profile_url}
         width="250px"
         height="250px"
-        attributes={{
-          link: {
-            fetchpriority: "high",
-          },
-        }}
         alt={data.profile_alt}
       />
     </div>

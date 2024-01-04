@@ -1,8 +1,5 @@
 ---
 import data from "./Projects.json";
-// @ts-expect-error
-import { Img } from "astro-imagetools/components";
-import Tailwindcss from "./svgl-icons/Tailwindcss.astro";
 import { Briefcase } from "lucide-astro";
 ---
 
@@ -37,7 +34,7 @@ import { Briefcase } from "lucide-astro";
           ))}
         </div>
         <div class="w-full rounded-xl aspect-video overflow-hidden">
-          <Img src={item.project_img} alt={item.project_title} />
+          <img src={item.project_img} alt={item.project_title} />
         </div>
       </div>
     ))
