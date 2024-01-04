@@ -4,12 +4,41 @@ interface Props {
 }
 
 import "@fontsource-variable/onest";
+import { SEO } from "astro-seo";
 const { title } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <SEO
+      title="maikol aguilar | portfolio"
+      description=" maikol aguilar portfolio to show my work"
+      openGraph={{
+        basic: {
+          title: "maikol aguilar portfolio to show my work",
+          type: "website",
+          image: "https://github.com/maikCyphlock.png",
+        },
+      }}
+      twitter={{
+        creator: "@maikolaguilar11",
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content:
+              "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+          },
+          { name: "twitter:title", content: "maikol aguilar" },
+          { name: "twitter:description", content: "Agent" },
+        ],
+      }}
+    />
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
@@ -27,11 +56,10 @@ const { title } = Astro.props;
     <div class="container px-4 flex flex-col lg:w-2/3 mx-auto">
       <slot />
     </div>
+    <style>
+      body {
+        font-family: "Onest Variable", sans-serif;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  body {
-    font-family: "Onest Variable", sans-serif;
-  }
-</style>
