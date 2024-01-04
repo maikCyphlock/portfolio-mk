@@ -12,5 +12,21 @@
     "project_url_github": "https://github.com/maikCyphlock/ecommerce-mik",
     "project_url_demo": "https://mikstore.vercel.app",
     "project_img": "/projects/project-1.png"
+  },
+  {
+    "project_title": "JSRunner",
+    "project_description": "JSRunner is a JavaScript playground like runJS, that uses Babel to transform the entered code and displays the results in the corresponding line of code.",
+    "project_stack": ["React", "Electron.js", "typescript"],
+    "project_url_github": "https://github.com/maikCyphlock/jsrunner",
+    "project_url_demo": "https://jsrunner.vercel.app/",
+    "project_img": "/projects/project-3.png"
+  },
+  {
+    "project_title": "DolarVe",
+    "project_description": "this is a mini-app made up with astro that fetch data from https://github.com/maikCyphlock/dollar-ve-api that do an scrape and retreive the data to cloudflare workers and github actions cron deploy api every one hour",
+    "project_stack": ["Astro", "React"],
+    "project_url_github": "https://github.com/maikCyphlock/dollar-frontend-api",
+    "project_url_demo": "https://dollar-frontend-api.vercel.app/",
+    "project_img": "/projects/project-4.png"
   }
 ]
