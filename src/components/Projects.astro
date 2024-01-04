@@ -1,9 +1,10 @@
 ---
 import data from "./Projects.json";
 import { Briefcase } from "lucide-astro";
+import Link from "./heroicons/Link.astro";
 ---
 
-<section class="my-40 flex gap-4 flex-col">
+<section class="my-40 flex gap-4 flex-col" id="projects">
   <div class="flex gap-2 items-center mb-8">
     <Briefcase class="text-zinc-300" />
     <h2 class="text-3xl font-thin text-zinc-300">Proyectos</h2>
@@ -12,20 +13,26 @@ import { Briefcase } from "lucide-astro";
   {
     data.map((item) => (
       <div class="flex flex-col gap-3 mb-10">
-        <h3 class="text-2xl text-sky-300 font-bold">{item.project_title}</h3>
-        <div class="flex gap-2 text-zinc-400 border-blue-200">
-          <a class="underline p-1" target="_blank" href={item.project_url_demo}>
+        <h3 class="text-2xl text-zinc-300 font-bold">{item.project_title}</h3>
+        <div class="flex gap-4 text-zinc-400 border-blue-200">
+          <a
+            class="underline flex items-center gap-1"
+            target="_blank"
+            href={item.project_url_demo}
+          >
+            <Link className="w-4" />
             demo
           </a>
           <a
-            class="underline p-1"
+            class="underline flex items-center gap-1"
             target="_blank"
             href={item.project_url_github}
           >
+            <Link className="w-4" />
             github
           </a>
         </div>
-        <p class="text-lg text-zinc-200">{item.project_description}</p>
+        <p class="text-lg text-zinc-400">{item.project_description}</p>
         <div class="flex gap-2">
           {item.project_stack.map((stack) => (
             <span class="text-zinc-400 border-zinc-800 text-xs border  rounded-lg px-2 py-1 flex gap-2">

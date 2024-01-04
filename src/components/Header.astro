@@ -3,7 +3,7 @@ import data from "./Header.json";
 import Button from "./Button.astro";
 import Linkedin from "./svgl-icons/Linkedin.astro";
 import Github from "./svgl-icons/Github.astro";
-import Email from "./svgl-icons/Email.astro";
+import Email from "./heroicons/Email.astro";
 ---
 
 <main class="mt-32 mb-20 flex flex-col gap-3">
@@ -21,7 +21,9 @@ import Email from "./svgl-icons/Email.astro";
   <h1 class="text-5xl font-bold tracking-tight">
     {data.title}
   </h1>
-  <h2 class="text-lg text-zinc-400 text-balance">{data.description}</h2>
+  <h2 class="text-lg font-light text-zinc-400 text-balance">
+    {data.description}
+  </h2>
   <div class="flex gap-4 dark:text-zinc-400">
     <Button>
       <div slot="icon"><Linkedin className="w-6 h-6" /></div>

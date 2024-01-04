@@ -3,13 +3,13 @@ import data from "./Navbar.json";
 ---
 
 <nav
-  class="sticky top-1 flex rounded-lg lg:gap-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 dark:text-white font-medium justify-center self-center text-xs lg:text-base px-4"
+  class="sticky top-1 flex rounded-lg lg:gap-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 dark:text-zinc-300 font-medium justify-center self-center text-xs lg:text-base px-4"
 >
   <div id="navbar-area" class="w-96 z-10 absolute top-10 h-10 self-center">
   </div>
   {
     data.map((item) => (
-      <a href={item.url} class="p-2 ">
+      <a href={item.url} class="p-2 hover:text-zinc-100">
         {item.name}
       </a>
     ))
