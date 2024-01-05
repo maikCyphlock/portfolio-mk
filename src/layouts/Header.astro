@@ -1,14 +1,25 @@
 ---
 import data from "./Header.json";
-import Button from "./Button.astro";
-import Linkedin from "./svgl-icons/Linkedin.astro";
-import Github from "./svgl-icons/Github.astro";
-import Email from "./heroicons/Email.astro";
+import Button from "../components/Button.astro";
+import Linkedin from "../components/svgl-icons/Linkedin.astro";
+import Github from "../components/svgl-icons/Github.astro";
+import Email from "../components/heroicons/Email.astro";
 ---
 
 <main class="mt-32 mb-20 flex flex-col gap-3">
-  <picture>
-    <div class="rounded-full aspect-square w-20 overflow-hidden">
+  <picture class="flex gap-4">
+    <div class="absolute -z-0 scale-75 rounded-full aspect-square w-20">
+      <img
+        src={data.profile_url}
+        width="250px"
+        height="250px"
+        class="blur-xl"
+        alt={data.profile_alt}
+      />
+    </div>
+    <div
+      class="border-2 border-white/70 rounded-full z-10 aspect-square w-20 overflow-hidden"
+    >
       <img
         src={data.profile_url}
         width="250px"
@@ -17,7 +28,12 @@ import Email from "./heroicons/Email.astro";
       />
     </div>
     <span class="sr-only">Mi perfil en GitHub</span>
+    <span
+      class="self-end px-2 border-2 rounded-full border-green-600 text-green-400"
+      >{data.job_status}</span
+    >
   </picture>
+
   <h1 class="text-5xl font-bold tracking-tight">
     {data.title}
   </h1>

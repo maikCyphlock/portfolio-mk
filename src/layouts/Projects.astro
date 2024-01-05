@@ -1,7 +1,7 @@
 ---
 import data from "./Projects.json";
 import { Briefcase } from "lucide-astro";
-import Link from "./heroicons/Link.astro";
+import Link from "../components/heroicons/Link.astro";
 ---
 
 <section class="my-40 flex gap-4 flex-col" id="projects">
@@ -32,10 +32,12 @@ import Link from "./heroicons/Link.astro";
             github
           </a>
         </div>
-        <p class="text-lg text-zinc-400">{item.project_description}</p>
+        <p class="text-lg text-zinc-400 text-pretty">
+          {item.project_description}
+        </p>
         <div class="flex gap-2">
           {item.project_stack.map((stack) => (
-            <span class="text-zinc-400 border-zinc-800 text-xs border  rounded-lg px-2 py-1 flex gap-2">
+            <span class="text-zinc-400 border-zinc-800 text-xs border  rounded-lg px-2 py-1 flex gap-2 ">
               {stack}
             </span>
           ))}
