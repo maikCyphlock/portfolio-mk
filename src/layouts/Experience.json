@@ -1,0 +1,15 @@
+{
+  "es": {
+    "title": "Experiencia",
+    "experiences": [
+      {
+        "title": "MK Ecommerce: A Development Experience Built for Speed, Style, and Scalability. ",
+        "description": "<p>MK Ecommerce ofrece una solución de desarrollo de tiendas online que combina tecnología avanzada y diseño intuitivo para destacarse en el competitivo mundo del comercio electrónico. La plataforma utiliza una pila tecnológica cuidadosamente seleccionada que incluye Next.js para una carga rápida de páginas, Tailwind CSS para crear interfaces atractivas sin necesidad de estilos personalizados, Shopify como backend confiable y escalable, Shadcn proporcionando bonitos componentes para React, y GraphQL para obtener datos de manera eficiente.</p>\n<p>Para los desarrolladores, MK Ecommerce ofrece velocidad, agilidad y control. Gracias al renderizado del lado del servidor, las páginas se cargan al instante, brindando una experiencia fluida. Además, la plataforma permite un control granular sobre la obtención de datos, optimizando el rendimiento y reduciendo la carga del servidor."
+      },
+      {
+        "title": "DolarVe: A Seamless Development Experience Fueled by Astro and Clever Data Fetching",
+        "description": "<p>DolarVe es un sitio web construido con Astro, un marco de desarrollo web emergente. Astro se destaca por su excelencia en el rendimiento, generando sitios estáticos de carga ultrarrápida.</p><p>También ofrece flexibilidad al integrarse con componentes React existentes.</p><p> DolarVe se beneficia del pequeño tamaño del paquete de Astro, lo que resulta en tiempos de carga rápidos y un consumo mínimo de ancho de banda. Además, el sitio obtiene datos de una API robusta construida con JavaScript y desplegada en Cloudflare Workers.</p><p> Esta API se actualiza cada hora, asegurando que DolarVe siempre refleje los tipos de cambio más recientes.</p><p> El proceso de despliegue se automatiza mediante GitHub Actions, que actualiza la API cada hora a través de una tarea cron, eliminando la necesidad de intervención manual y garantizando un flujo constante de datos actualizados.</p>"
+      }
+    ]
+  }
+}
