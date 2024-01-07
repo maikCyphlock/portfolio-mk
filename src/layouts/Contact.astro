@@ -1,14 +1,59 @@
-<div class="bg-zinc-900 text-zinc-400 p-8 rounded-lg shadow-md mb-10">
-  <h2 class="text-3xl font-bold mb-8">Let's work together!</h2>
+---
+import Email from "../components/heroicons/Email.astro";
+import Github from "../components/svgl-icons/Github.astro";
+import Linkedin from "../components/svgl-icons/Linkedin.astro";
+---
 
-  <div class="my-4 flex gap-5">
-    <img src="/maikol-2.jpg" class="w-32 h-32 object-cover rounded-lg" alt="" />
-    <a
-      href="mailto:maikoljob30@gmail.com"
-      target="_blank"
-      class="inline-block self-end border border-zinc-800 dark:bg-zinc-900 px-3 py-2 rounded-2xl dark:hover:bg-zinc-800 dark:hover:border-zinc-700"
-    >
-      Contact Me
-    </a>
+<div class="container flex flex-col mx-auto" id="contact">
+  <div class="w-full draggable">
+    <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+      <div class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="flex flex-col items-center border border-transparent gap-3 px-8 py-10 bg-zinc-900 rounded-3xl shadow-main hover:border-zinc-800"
+        >
+          <span>
+            <Email className="w-8 h-8" />
+          </span>
+          <p class="text-2xl font-extrabold text-gray-300">Email</p>
+          <p class="text-base leading-7 text-gray-500">Contact us at</p>
+          <a
+            class="text-lg font-bold text-purple-300 text-pretty"
+            href="mailto:maikoljob30@gmail.com">maikoljob30</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-center border border-transparent gap-3 px-8 py-10 bg-zinc-900 rounded-3xl shadow-main hover:border-zinc-800"
+        >
+          <span>
+            <Linkedin className="w-8 h-8" />
+          </span>
+          <p class="text-2xl font-extrabold text-gray-300">Phone</p>
+          <p class="text-base leading-7 text-gray-500 text-pretty">
+            My profile on LinkedIn
+          </p>
+          <a
+            class="text-lg font-bold text-purple-300"
+            href="https://www.linkedin.com/in/maikol-aguilar/"
+            >in/maikol-aguilar</a
+          >
+        </div>
+        <div
+          class="flex flex-col items-center border border-transparent gap-3 px-8 py-10 bg-zinc-900 rounded-3xl shadow-main hover:border-zinc-800"
+        >
+          <span>
+            <Github className="w-8 h-8" />
+          </span>
+          <p class="text-2xl font-extrabold text-gray-300">Github</p>
+          <p class="text-base leading-7 text-gray-500 text-pretty">
+            Look out my recent work on Github
+          </p>
+          <a
+            class="text-lg font-bold text-purple-300"
+            target="_blank"
+            href="https://github.com/maikCyphlock">maikCyphlock</a
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </div>
