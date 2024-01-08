@@ -5,6 +5,7 @@ interface Props {
 
 import "@fontsource-variable/onest";
 import { SEO } from "astro-seo";
+import Flare from "../components/Flare.astro";
 const { title } = Astro.props;
 ---
 
@@ -25,17 +26,18 @@ const { title } = Astro.props;
         creator: "@maikolaguilar11",
       }}
       extend={{
-        // extending the default link tags
         link: [{ rel: "icon", href: "/favicon.ico" }],
-        // extending the default meta tags
+
         meta: [
           {
             name: "twitter:image",
-            content:
-              "https://user-images.githubusercontent.com/5182256/131216951-8f74f425-f775-463d-a11b-0e01ad9fce8d.png",
+            content: "https://github.com/maikCyphlock.png",
           },
           { name: "twitter:title", content: "maikol aguilar" },
-          { name: "twitter:description", content: "Agent" },
+          {
+            name: "twitter:description",
+            content: "my personal portfolio 2024",
+          },
         ],
       }}
     />
@@ -48,11 +50,11 @@ const { title } = Astro.props;
   </head>
   <body class="relative dark:bg-neutral-950 dark:text-gray-50 bg-gray-100">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-neutral-100 dark:bg-neutral-950
-	bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(117,216,255,0.5),rgba(255,255,255,0.9))]
-	dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(100,50,255,0.3),rgba(100,255,255,0))]"
+      style='width: 100%; height: 100%; background-size: 128px; background-repeat: repeat; background-image: url("https://framerusercontent.com/images/rR6HYXBrMmX4cRpXfXUOvpvpB0.png"); opacity: 0.05; border-radius: 0px;'
+      class="absolute top-0 z-[-1]"
     >
     </div>
+    <Flare />
     <div class="container px-4 flex flex-col lg:w-2/3 mx-auto">
       <slot />
     </div>

@@ -4,6 +4,7 @@ import Navbar from "../layouts/Navbar.astro";
 import Projects from "../layouts/Projects.astro";
 import Layout from "../layouts/Layout.astro";
 import Experience from "../layouts/Experience.astro";
+import Contact from "../layouts/Contact.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -11,4 +12,5 @@ import Experience from "../layouts/Experience.astro";
   <Header />
   <Projects />
   <Experience />
+  <Contact client:visible />
 </Layout>

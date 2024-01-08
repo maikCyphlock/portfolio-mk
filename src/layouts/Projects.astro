@@ -35,7 +35,7 @@ import Link from "../components/heroicons/Link.astro";
         <p class="text-lg text-zinc-400 text-pretty">
           {item.project_description}
         </p>
-        <div class="flex gap-2">
+        <div class="flex flex-wrap gap-2">
           {item.project_stack.map((stack) => (
             <span class="text-zinc-400 border-zinc-800 text-xs border  rounded-lg px-2 py-1 flex gap-2 ">
               {stack}

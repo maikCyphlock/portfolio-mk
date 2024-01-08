@@ -27,20 +27,22 @@ import Email from "../components/heroicons/Email.astro";
         alt={data.profile_alt}
       />
     </div>
+    <div class="self-center">
+      <span class="text-2xl font-bold flex items-center">Maikol Aguilar</span>
+      <span
+        class="text-xl font-bold flex items-center text-zinc-500 text-balance"
+      >
+        Full-stack Dev, Maker, Dreamer</span
+      >
+    </div>
     <span class="sr-only">Mi perfil en GitHub</span>
-    <span
-      class="self-end px-2 border-2 rounded-full border-green-600 text-green-400"
-      >{data.job_status}</span
-    >
   </picture>
 
-  <h1 class="text-5xl font-bold tracking-tight">
-    {data.title}
-  </h1>
-  <h2 class="text-lg font-light text-zinc-400 text-balance">
+  <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-balance">
     {data.description}
-  </h2>
-  <div class="flex gap-4 dark:text-zinc-400">
+  </h1>
+
+  <div class="flex flex-wrap gap-4 items-center dark:text-zinc-400">
     <Button>
       <div slot="icon"><Linkedin className="w-6 h-6" /></div>
       <a href="https://www.linkedin.com/in/maikol-aguilar/" target="_blank"
@@ -55,5 +57,9 @@ import Email from "../components/heroicons/Email.astro";
       <div slot="icon"><Email className="w-6 h-6 " /></div>
       <a href="mailto:maikoljob30@gmail.com" target="_blank">Correo</a>
     </Button>
+    <span
+      class="self-center px-2 border-2 rounded-full border-green-600 text-green-400"
+      >{data.job_status}</span
+    >
   </div>
 </main>
