@@ -8,7 +8,9 @@ import Email from "../components/heroicons/Email.astro";
 
 <main class="mt-32 mb-20 flex flex-col gap-3">
   <picture class="flex gap-4">
-    <div class="absolute -z-0 scale-75 rounded-full aspect-square w-20">
+    <div
+      class="absolute flex items-center -z-0 scale-75 rounded-full aspect-square h-20 w-20"
+    >
       <img
         src={data.profile_url}
         width="250px"
@@ -18,7 +20,7 @@ import Email from "../components/heroicons/Email.astro";
       />
     </div>
     <div
-      class="border-2 border-white/70 rounded-full z-10 aspect-square w-20 overflow-hidden"
+      class="border-2 border-white/70 rounded-full z-10 w-20 overflow-hidden"
     >
       <img
         src={data.profile_url}
@@ -28,9 +30,11 @@ import Email from "../components/heroicons/Email.astro";
       />
     </div>
     <div class="self-center">
-      <span class="text-2xl font-bold flex items-center">Maikol Aguilar</span>
+      <span class="text-xl lg:text-2xl font-bold flex items-center"
+        >Maikol Aguilar</span
+      >
       <span
-        class="text-xl font-bold flex items-center text-zinc-500 text-balance"
+        class="text-lg font-normal flex items-center text-zinc-500 text-balance"
       >
         Full-stack Dev, Maker, Dreamer</span
       >
@@ -38,7 +42,7 @@ import Email from "../components/heroicons/Email.astro";
     <span class="sr-only">Mi perfil en GitHub</span>
   </picture>
 
-  <h1 class="text-4xl lg:text-5xl font-bold tracking-tight text-balance">
+  <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-balance">
     {data.description}
   </h1>
 
