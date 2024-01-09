@@ -16,3 +16,21 @@ import data from "./Experience.json";
     ))
   }
 </section>
+<style>
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #experience {
+    view-timeline-name: --project;
+    view-timeline-axis: block;
+    animation-timeline: --project;
+    animation-name: show;
+    animation-range: entry 5% cover 20%;
+  }
+</style>

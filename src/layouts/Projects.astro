@@ -4,7 +4,7 @@ import { Briefcase } from "lucide-astro";
 import Link from "../components/heroicons/Link.astro";
 ---
 
-<section class="my-40 flex gap-4 flex-col" id="projects">
+<section class="my-40 flex gap-4 flex-col animate-fade-up" id="projects">
   <div class="flex gap-2 items-center mb-8">
     <Briefcase class="text-zinc-300" />
     <h2 class="text-3xl font-thin text-zinc-300">Proyectos</h2>
@@ -49,3 +49,22 @@ import Link from "../components/heroicons/Link.astro";
     ))
   }
 </section>
+
+<style>
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #projects {
+    view-timeline-name: --project;
+    view-timeline-axis: block;
+    animation-timeline: --project;
+    animation-name: show;
+    animation-range: entry 5% cover 20%;
+  }
+</style>
