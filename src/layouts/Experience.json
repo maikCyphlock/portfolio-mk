@@ -11,5 +11,18 @@
         "description": "<p>DolarVe es un sitio web construido con Astro, un marco de desarrollo web emergente. Astro se destaca por su excelencia en el rendimiento, generando sitios estáticos de carga ultrarrápida.</p><p>También ofrece flexibilidad al integrarse con componentes React existentes.</p><p> DolarVe se beneficia del pequeño tamaño del paquete de Astro, lo que resulta en tiempos de carga rápidos y un consumo mínimo de ancho de banda. Además, el sitio obtiene datos de una API robusta construida con JavaScript y desplegada en Cloudflare Workers.</p><p> Esta API se actualiza cada hora, asegurando que DolarVe siempre refleje los tipos de cambio más recientes.</p><p> El proceso de despliegue se automatiza mediante GitHub Actions, que actualiza la API cada hora a través de una tarea cron, eliminando la necesidad de intervención manual y garantizando un flujo constante de datos actualizados.</p>"
       }
     ]
+  },
+  "en": {
+    "title": "Experience",
+    "experiences": [
+      {
+        "title": "MK Ecommerce: A Development Experience Built for Speed, Style, and Scalability. ",
+        "description": "<p>MK Ecommerce offers an online shop development solution that combines advanced technology and intuitive design to stand out in the competitive world of ecommerce. The platform uses a carefully selected technology stack that includes Next.js for fast page loading, Tailwind CSS to create attractive interfaces without the need for custom styling, Shopify as a reliable and scalable backend, Shadcn providing beautiful components for React, and GraphQL for efficient data fetching.</p> <p>For developers, MK Ecommerce offers speed, agility and control. Thanks to server-side rendering, pages load instantly, providing a seamless experience. In addition, the platform allows granular control over data fetching, optimising performance and reducing server load.</p>"
+      },
+      {
+        "title": "DolarVe: A Seamless Development Experience Fueled by Astro and Clever Data Fetching",
+        "description": "<p>DolarVe is a website built with Astro, an emerging web development framework. Astro excels at performance excellence, generating ultra-fast loading static sites.</p><p>It also offers flexibility by integrating with existing React components.</p><p>DolarVe benefits from Astro's small package size, resulting in fast load times and minimal bandwidth consumption. In addition, the site draws data from a robust API built with JavaScript and deployed on Cloudflare Workers.</p><p> This API is updated hourly, ensuring that DolarVe always reflects the latest exchange rates.</p><p> The deployment process is automated by GitHub Actions, which updates the API every hour via a cron job, eliminating the need for manual intervention and ensuring a constant stream of up-to-date data.</p><p>"
+      }
+    ]
   }
 }

@@ -1,32 +1,66 @@
-[
-  {
-    "project_title": "Mk Ecommerce",
-    "project_description": "Desarrollé una solución de comercio electrónico de alto rendimiento utilizando Next.js, Tailwind CSS, y Shopify, optimizada para velocidad, escalabilidad y estilo.",
-    "project_stack": [
-      "Next.js",
-      "Tailwind CSS",
-      "shopify",
-      "shadcn",
-      "graphql"
-    ],
-    "project_url_github": "https://github.com/maikCyphlock/ecommerce-mik",
-    "project_url_demo": "https://mikstore.vercel.app",
-    "project_img": "/projects/project-1.png"
-  },
-  {
-    "project_title": "JSRunner",
-    "project_description": "Creé un entorno de ejecución de JavaScript similar a runJS, implementando React, Electron.js, y TypeScript para ofrecer una experiencia de desarrollo con feedback répido e interactiva.",
-    "project_stack": ["React", "Electron.js", "typescript"],
-    "project_url_github": "https://github.com/maikCyphlock/jsrunner",
-    "project_url_demo": "https://jsrunner.vercel.app/",
-    "project_img": "/projects/project-3.png"
-  },
-  {
-    "project_title": "DolarVe",
-    "project_description": " Desarrollé una mini-aplicación con Astro y React, que integra una API robusta actualizada cada hora para mostrar datos de tipos de cambio en tiempo real.",
-    "project_stack": ["Astro", "React"],
-    "project_url_github": "https://github.com/maikCyphlock/dollar-frontend-api",
-    "project_url_demo": "https://dollar-frontend-api.vercel.app/",
-    "project_img": "/projects/project-4.png"
-  }
-]
+{
+  "es": [
+    {
+      "project_title": "Mk Ecommerce",
+      "project_description": "Desarrollé una solución de comercio electrónico de alto rendimiento utilizando Next.js, Tailwind CSS, y Shopify, optimizada para velocidad, escalabilidad y estilo.",
+      "project_stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "shopify",
+        "shadcn",
+        "graphql"
+      ],
+      "project_url_github": "https://github.com/maikCyphlock/ecommerce-mik",
+      "project_url_demo": "https://mikstore.vercel.app",
+      "project_img": "/projects/project-1.png"
+    },
+    {
+      "project_title": "JSRunner",
+      "project_description": "Creé un entorno de ejecución de JavaScript similar a runJS, implementando React, Electron.js, y TypeScript para ofrecer una experiencia de desarrollo con feedback répido e interactiva.",
+      "project_stack": ["React", "Electron.js", "typescript"],
+      "project_url_github": "https://github.com/maikCyphlock/jsrunner",
+      "project_url_demo": "https://jsrunner.vercel.app/",
+      "project_img": "/projects/project-3.png"
+    },
+    {
+      "project_title": "DolarVe",
+      "project_description": " Desarrollé una mini-aplicación con Astro y React, que integra una API robusta actualizada cada hora para mostrar datos de tipos de cambio en tiempo real.",
+      "project_stack": ["Astro", "React"],
+      "project_url_github": "https://github.com/maikCyphlock/dollar-frontend-api",
+      "project_url_demo": "https://dollar-frontend-api.vercel.app/",
+      "project_img": "/projects/project-4.png"
+    }
+  ],
+  "en": [
+    {
+      "project_title": "Mk Ecommerce",
+      "project_description": "I developed a high-performance e-commerce solution using Next.js, Tailwind CSS, and Shopify, optimised for speed, scalability, and style.",
+      "project_stack": [
+        "Next.js",
+        "Tailwind CSS",
+        "shopify",
+        "shadcn",
+        "graphql"
+      ],
+      "project_url_github": "https://github.com/maikCyphlock/ecommerce-mik",
+      "project_url_demo": "https://mikstore.vercel.app",
+      "project_img": "/projects/project-1.png"
+    },
+    {
+      "project_title": "JSRunner",
+      "project_description": "I created a JavaScript runtime environment similar to runJS, implementing React, Electron.js, and TypeScript to provide a fast and interactive feedback development experience.",
+      "project_stack": ["React", "Electron.js", "typescript"],
+      "project_url_github": "https://github.com/maikCyphlock/jsrunner",
+      "project_url_demo": "https://jsrunner.vercel.app/",
+      "project_img": "/projects/project-3.png"
+    },
+    {
+      "project_title": "DolarVe",
+      "project_description": "I developed a mini-application with Astro and React, which integrates a robust API updated hourly to display real-time exchange rate data.",
+      "project_stack": ["Astro", "React"],
+      "project_url_github": "https://github.com/maikCyphlock/dollar-frontend-api",
+      "project_url_demo": "https://dollar-frontend-api.vercel.app/",
+      "project_img": "/projects/project-4.png"
+    }
+  ]
+}

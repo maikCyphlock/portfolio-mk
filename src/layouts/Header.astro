@@ -1,4 +1,5 @@
 ---
+const { language } = Astro.props;
 import data from "./Header.json";
 import Button from "../components/Button.astro";
 import Linkedin from "../components/svgl-icons/Linkedin.astro";
@@ -12,21 +13,21 @@ import Email from "../components/heroicons/Email.astro";
       class="absolute flex items-center -z-0 scale-75 rounded-full aspect-square h-20 w-20"
     >
       <img
-        src={data.profile_url}
+        src={data[language].profile_url}
         width="250px"
         height="250px"
         class="blur-xl"
-        alt={data.profile_alt}
+        alt={data[language].profile_alt}
       />
     </div>
     <div
       class="border-2 border-white/70 rounded-full z-10 w-20 overflow-hidden"
     >
       <img
-        src={data.profile_url}
+        src={data[language].profile_url}
         width="250px"
         height="250px"
-        alt={data.profile_alt}
+        alt={data[language].profile_alt}
       />
     </div>
     <div class="self-center">
@@ -43,14 +44,14 @@ import Email from "../components/heroicons/Email.astro";
   </picture>
 
   <h1 class="text-4xl lg:text-5xl font-extrabold tracking-tight text-balance">
-    {data.description}
+    {data[language].description}
   </h1>
 
   <div class="flex flex-wrap gap-4 items-center dark:text-zinc-400">
     <Button>
       <div slot="icon"><Linkedin className="w-6 h-6" /></div>
       <a href="https://www.linkedin.com/in/maikol-aguilar/" target="_blank"
-        >Contacto</a
+        >Contact</a
       >
     </Button>
     <Button>
@@ -59,11 +60,11 @@ import Email from "../components/heroicons/Email.astro";
     </Button>
     <Button>
       <div slot="icon"><Email className="w-6 h-6 " /></div>
-      <a href="mailto:maikoljob30@gmail.com" target="_blank">Correo</a>
+      <a href="mailto:maikoljob30@gmail.com" target="_blank">Email</a>
     </Button>
     <span
       class="self-center px-2 border-2 rounded-full border-green-600 text-green-400"
-      >{data.job_status}</span
+      >{data[language].job_status}</span
     >
   </div>
 </main>

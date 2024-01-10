@@ -1,8 +1,18 @@
 {
-  "profile_url": "https://github.com/maikCyphlock.png",
-  "job_status": "buscando trabajo",
-  "profile_alt": "Mi perfil en GitHub",
-  "profile_name": "MaikCyphlock",
-  "title": "Hey, soy Maikol aguilar",
-  "description": "Desarrollador web y Diseñador UI. Experto en crear aplicaciones únicas."
+  "es": {
+    "profile_url": "https://github.com/maikCyphlock.png",
+    "job_status": "buscando trabajo",
+    "profile_alt": "Mi perfil en GitHub",
+    "profile_name": "MaikCyphlock",
+    "title": "Hey, soy Maikol aguilar",
+    "description": "Desarrollador web y Diseñador UI. Experto en crear aplicaciones únicas."
+  },
+  "en": {
+    "profile_url": "https://github.com/maikCyphlock.png",
+    "job_status": "looking for work",
+    "profile_alt": "My profile on GitHub",
+    "profile_name": "MaikCyphlock",
+    "title": "Hey, I'm Maikol aguilar",
+    "description": " Web developer and UI Designer. Expert in creating unique applications."
+  }
 }

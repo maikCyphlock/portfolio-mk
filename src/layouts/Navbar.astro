@@ -1,17 +1,14 @@
 ---
 import data from "./Navbar.json";
+const { language } = Astro.props;
 ---
 
 <nav
   class="sticky z-30 top-2 flex rounded-lg lg:gap-4 bg-white dark:bg-zinc-900 border dark:border-zinc-700 dark:text-zinc-300 font-medium justify-center self-center text-xs lg:text-base px-4"
 >
   {
-    data.map((item) => (
-      <a
-        href={item.url}
-        download={item?.download}
-        class="p-2 hover:text-zinc-100"
-      >
+    data[language].map((item) => (
+      <a href={item.url} class="p-2 hover:text-zinc-100">
         {item.name}
       </a>
     ))

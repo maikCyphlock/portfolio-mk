@@ -1,11 +1,12 @@
 ---
 import data from "./Experience.json";
+const { language } = Astro.props;
 ---
 
 <section id="experience" class="mb-10">
-  <h1 class="text-3xl font-thin text-zinc-300 mb-10">{data.es.title}</h1>
+  <h1 class="text-3xl font-thin text-zinc-300 mb-10">{data[language].title}</h1>
   {
-    data.es.experiences.map((item) => (
+    data[language].experiences.map((item) => (
       <article class="flex flex-col gap-4 mb-20">
         <h1 class="text-2xl text-balance">{item.title}</h1>
         <div
